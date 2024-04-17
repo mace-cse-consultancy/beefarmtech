@@ -30,9 +30,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <style>
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+    </style>
   </head>
 
-  <body>
+  <body style="background-color: #edf2f4">
     <!-- HEADER -->
     <div id="1"></div>
     <script>
@@ -44,18 +49,11 @@
         document.getElementById(1).innerHTML = req.responseText;
       }
     </script>
-    <!-- Introduction -->
-    <div style="padding: 0; padding-top: 50px">
-      <h1 style="font-size: 50px; font-weight: 500">
-        Welcome to <br /><span style="color: green; font-weight: 900"
-          >BeeFarmTech</span
-        >
-      </h1>
-    </div>
-    <!-- SLIDER -->
+
+    <!-- yt video -->
     <div id="2"></div>
     <script>
-      load("slider.html");
+      load("ytlink.html");
       function load(url) {
         req = new XMLHttpRequest();
         req.open("GET", url, false);
@@ -64,8 +62,36 @@
       }
     </script>
 
+    <p
+      style="
+        padding: 30px 70px;
+        font-size: 16px;
+        line-height: 30px;
+        color: rgb(61, 61, 61);
+      "
+    >
+      <b style="font-size: 2.5rem">കർഷകരിൽ</b> നിന്ന് കസ്റ്റമറിലേക്ക്
+      പോത്താനിക്കാട് ഹണിഗ്രാം ഫാർമർ പ്രൊഡ്യൂസർ കമ്പനിയും കൃഷി ഭവനും സംയുക്തമായി,
+      തേനീച്ച പരിപാലനവും മൂല്യവർദ്ധിത ഉത്പ്പന്നങ്ങളുടെ പ്രദർശനവും
+      സംഘടിപ്പിക്കുന്നു. നിങ്ങൾ ഏതുതരം കൃഷി ചെയ്യുന്ന കർഷകൻ ആയിക്കൊള്ളട്ടെ
+      ഫ്രൂട്ട്സ്, വാഴ, പശു, കൂൺ, തേനീച്ച കൃഷി ചെയ്യുന്ന ആളുകളാണോ? നിങ്ങൾ ഒരു
+      സംരംഭകൻ ആകാൻ താത്പര്യമുള്ള ആളാണോ? PMEGP ലോണുകളുടെ സാധ്യതകളെക്കുറിച്ചുo
+      സംസാരിക്കുന്നു. കർഷകൻ ഉണ്ടാക്കുന്ന ഉത്പ്പന്നങ്ങൾക്ക് മതിയായ വില
+      കിട്ടുന്നില്ല എന്നുള്ളതാണ് കർഷകൻ അനുഭവിക്കുന്ന ബുദ്ധിമുട്ട്. അവിടെയാണ്
+      കമ്പനി നിങ്ങൾക്ക് കൈത്താങ്ങ് ആകുന്നത് നിങ്ങൾ ഉത്പാദിപ്പിക്കുന്ന ഉത്പ്പന്നം
+      ഉത്പാദിപ്പിക്കുന്ന സ്ഥലത്ത് നിന്ന് തന്നെ മാർക്കറ്റ് ചെയ്യും. കമ്പനിയുടെ
+      വെബ്സൈറ്റ് ആയ [BEEFARMTECH] വഴി ഇടനിലക്കാരില്ലാതെ കർഷകരുടെ ഉത്പ്പന്നങ്ങൾ
+      മാർക്കറ്റ് ചെയ്യാൻ സാധിക്കും. തേനീച്ച കൃഷിയിൽ സംസ്ഥാന അവാർഡ് ജേതാവും
+      മികച്ച സംരംഭകനുമായ T. K രാജു ക്ലാസ് നയിക്കുന്നു. പശു വളർത്തൽ ജില്ലാ അവാർഡ്
+      കർഷക തിലകം ഷിജി ഡേവിഡ്. കൂൺ കൃഷിയിൽ മികച്ച ജില്ലാ കാർഷിക വിജ്ഞാന അവാർഡ്
+      ജേതാവ് അനിത ജലീൽ എന്നിവരും ക്ലാസ്സ് നയിക്കുന്നു. താത്പര്യമുള്ള ആളുകൾ
+      ബന്ധപ്പെടുക. <br />
+      മാനേജിങ് ഡയറക്ടർ: ഷാജി ഇ. എം. <br />
+      CONTACT: 9048532220, 0485 2994046
+    </p>
+
     <!-- CONTENT SECTION -->
-    <div id="3"></div>
+    <!-- <div id="3"></div>
     <script>
       load("content.html");
       function load(url) {
@@ -74,7 +100,7 @@
         req.send(null);
         document.getElementById(3).innerHTML = req.responseText;
       }
-    </script>
+    </script> -->
 
     <!-- FOOTER -->
     <div id="4"></div>
